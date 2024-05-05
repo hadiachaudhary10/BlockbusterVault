@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D73E1A072BA0EF4C008960C4 /* BlockbusterVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E1A062BA0EF4C008960C4 /* BlockbusterVaultApp.swift */; };
+		D73E1A0B2BA0EF4D008960C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73E1A0A2BA0EF4D008960C4 /* Assets.xcassets */; };
+		D73E1A0E2BA0EF4D008960C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73E1A0D2BA0EF4D008960C4 /* Preview Assets.xcassets */; };
+		D77D73402BA345FE002EAA4C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D733F2BA345FE002EAA4C /* NetworkManager.swift */; };
+		D77D73422BA36EE7002EAA4C /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73412BA36EE7002EAA4C /* MoviesService.swift */; };
+		D77D73452BA36F85002EAA4C /* PopularMoviesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73442BA36F85002EAA4C /* PopularMoviesListModel.swift */; };
+		D77D73482BA3A194002EAA4C /* PopularMoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73472BA3A194002EAA4C /* PopularMoviesListView.swift */; };
+		D77D734A2BA3A1C2002EAA4C /* PopularMoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73492BA3A1C2002EAA4C /* PopularMoviesListViewModel.swift */; };
+		D77D734E2BA3A30B002EAA4C /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D734D2BA3A30B002EAA4C /* AsyncImageView.swift */; };
+		D77D73502BA3A371002EAA4C /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D734F2BA3A371002EAA4C /* LabelView.swift */; };
+		D77D73532BA3A3D8002EAA4C /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73522BA3A3D8002EAA4C /* Color+extensions.swift */; };
+		D77D73552BA42A3E002EAA4C /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73542BA42A3E002EAA4C /* MovieDetailsView.swift */; };
+		D77D73572BA42A4F002EAA4C /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73562BA42A4F002EAA4C /* MovieDetailsViewModel.swift */; };
+		D77D73592BA42A5D002EAA4C /* MovieDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73582BA42A5D002EAA4C /* MovieDetailsModel.swift */; };
+		D77D735C2BA43AC3002EAA4C /* MarqueeText in Frameworks */ = {isa = PBXBuildFile; productRef = D77D735B2BA43AC3002EAA4C /* MarqueeText */; };
+		D77D735E2BA43D95002EAA4C /* AnimatedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D735D2BA43D95002EAA4C /* AnimatedTextView.swift */; };
+		D77D73612BA45018002EAA4C /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = D77D73602BA45018002EAA4C /* CachedAsyncImage */; };
+		D77D73632BA45079002EAA4C /* CacheAsyncImage+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D73622BA45079002EAA4C /* CacheAsyncImage+extensions.swift */; };
+		D77D73692BA45558002EAA4C /* StarRatingViewSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D77D73682BA45558002EAA4C /* StarRatingViewSwiftUI */; };
+		D77D736C2BA48A30002EAA4C /* AsyncImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D736B2BA48A30002EAA4C /* AsyncImageViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		301700102BE82EAD009516B1 /* BlockbisterVault-Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "BlockbisterVault-Keys.xcconfig"; sourceTree = "<group>"; };
+		301700112BE82EF2009516B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D73E1A032BA0EF4C008960C4 /* BlockbusterVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockbusterVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73E1A062BA0EF4C008960C4 /* BlockbusterVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockbusterVaultApp.swift; sourceTree = "<group>"; };
+		D73E1A0A2BA0EF4D008960C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D73E1A0D2BA0EF4D008960C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D77D733F2BA345FE002EAA4C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D77D73412BA36EE7002EAA4C /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		D77D73442BA36F85002EAA4C /* PopularMoviesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesListModel.swift; sourceTree = "<group>"; };
+		D77D73472BA3A194002EAA4C /* PopularMoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesListView.swift; sourceTree = "<group>"; };
+		D77D73492BA3A1C2002EAA4C /* PopularMoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesListViewModel.swift; sourceTree = "<group>"; };
+		D77D734D2BA3A30B002EAA4C /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		D77D734F2BA3A371002EAA4C /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		D77D73522BA3A3D8002EAA4C /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
+		D77D73542BA42A3E002EAA4C /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		D77D73562BA42A4F002EAA4C /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		D77D73582BA42A5D002EAA4C /* MovieDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsModel.swift; sourceTree = "<group>"; };
+		D77D735D2BA43D95002EAA4C /* AnimatedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextView.swift; sourceTree = "<group>"; };
+		D77D73622BA45079002EAA4C /* CacheAsyncImage+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CacheAsyncImage+extensions.swift"; sourceTree = "<group>"; };
+		D77D736B2BA48A30002EAA4C /* AsyncImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D73E1A002BA0EF4C008960C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77D735C2BA43AC3002EAA4C /* MarqueeText in Frameworks */,
+				D77D73612BA45018002EAA4C /* CachedAsyncImage in Frameworks */,
+				D77D73692BA45558002EAA4C /* StarRatingViewSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D73E19FA2BA0EF4C008960C4 = {
+			isa = PBXGroup;
+			children = (
+				D73E1A052BA0EF4C008960C4 /* BlockbusterVault */,
+				D73E1A042BA0EF4C008960C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D73E1A042BA0EF4C008960C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D73E1A032BA0EF4C008960C4 /* BlockbusterVault.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D73E1A052BA0EF4C008960C4 /* BlockbusterVault */ = {
+			isa = PBXGroup;
+			children = (
+				301700112BE82EF2009516B1 /* Info.plist */,
+				D77D73512BA3A3C5002EAA4C /* Utils */,
+				D77D734C2BA3A2F0002EAA4C /* CustomViews */,
+				D77D734B2BA3A1C5002EAA4C /* ViewModel */,
+				D77D73462BA37819002EAA4C /* View */,
+				D77D73432BA36F74002EAA4C /* Model */,
+				D77D733E2BA345EB002EAA4C /* Service */,
+				D77D733D2BA345C7002EAA4C /* App */,
+				D73E1A0A2BA0EF4D008960C4 /* Assets.xcassets */,
+				D73E1A0C2BA0EF4D008960C4 /* Preview Content */,
+			);
+			path = BlockbusterVault;
+			sourceTree = "<group>";
+		};
+		D73E1A0C2BA0EF4D008960C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D73E1A0D2BA0EF4D008960C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D77D733D2BA345C7002EAA4C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D73E1A062BA0EF4C008960C4 /* BlockbusterVaultApp.swift */,
+				301700102BE82EAD009516B1 /* BlockbisterVault-Keys.xcconfig */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D77D733E2BA345EB002EAA4C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D77D733F2BA345FE002EAA4C /* NetworkManager.swift */,
+				D77D73412BA36EE7002EAA4C /* MoviesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D77D73432BA36F74002EAA4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D77D73442BA36F85002EAA4C /* PopularMoviesListModel.swift */,
+				D77D73582BA42A5D002EAA4C /* MovieDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D77D73462BA37819002EAA4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D77D73472BA3A194002EAA4C /* PopularMoviesListView.swift */,
+				D77D73542BA42A3E002EAA4C /* MovieDetailsView.swift */,
+				D77D734D2BA3A30B002EAA4C /* AsyncImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D77D734B2BA3A1C5002EAA4C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D77D73492BA3A1C2002EAA4C /* PopularMoviesListViewModel.swift */,
+				D77D73562BA42A4F002EAA4C /* MovieDetailsViewModel.swift */,
+				D77D736B2BA48A30002EAA4C /* AsyncImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D77D734C2BA3A2F0002EAA4C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				D77D734F2BA3A371002EAA4C /* LabelView.swift */,
+				D77D735D2BA43D95002EAA4C /* AnimatedTextView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		D77D73512BA3A3C5002EAA4C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D77D73522BA3A3D8002EAA4C /* Color+extensions.swift */,
+				D77D73622BA45079002EAA4C /* CacheAsyncImage+extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D73E1A022BA0EF4C008960C4 /* BlockbusterVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D73E1A112BA0EF4D008960C4 /* Build configuration list for PBXNativeTarget "BlockbusterVault" */;
+			buildPhases = (
+				D73E19FF2BA0EF4C008960C4 /* Sources */,
+				D73E1A002BA0EF4C008960C4 /* Frameworks */,
+				D73E1A012BA0EF4C008960C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockbusterVault;
+			packageProductDependencies = (
+				D77D735B2BA43AC3002EAA4C /* MarqueeText */,
+				D77D73602BA45018002EAA4C /* CachedAsyncImage */,
+				D77D73682BA45558002EAA4C /* StarRatingViewSwiftUI */,
+			);
+			productName = MovieMatrix;
+			productReference = D73E1A032BA0EF4C008960C4 /* BlockbusterVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D73E19FB2BA0EF4C008960C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D73E1A022BA0EF4C008960C4 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D73E19FE2BA0EF4C008960C4 /* Build configuration list for PBXProject "BlockbusterVault" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D73E19FA2BA0EF4C008960C4;
+			packageReferences = (
+				D77D735A2BA43AC3002EAA4C /* XCRemoteSwiftPackageReference "MarqueeText" */,
+				D77D735F2BA45018002EAA4C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				D77D73672BA45558002EAA4C /* XCRemoteSwiftPackageReference "StarRatingViewSwiftUI" */,
+			);
+			productRefGroup = D73E1A042BA0EF4C008960C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D73E1A022BA0EF4C008960C4 /* BlockbusterVault */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D73E1A012BA0EF4C008960C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73E1A0E2BA0EF4D008960C4 /* Preview Assets.xcassets in Resources */,
+				D73E1A0B2BA0EF4D008960C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D73E19FF2BA0EF4C008960C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77D73402BA345FE002EAA4C /* NetworkManager.swift in Sources */,
+				D77D73422BA36EE7002EAA4C /* MoviesService.swift in Sources */,
+				D77D73632BA45079002EAA4C /* CacheAsyncImage+extensions.swift in Sources */,
+				D77D736C2BA48A30002EAA4C /* AsyncImageViewModel.swift in Sources */,
+				D77D73452BA36F85002EAA4C /* PopularMoviesListModel.swift in Sources */,
+				D77D73532BA3A3D8002EAA4C /* Color+extensions.swift in Sources */,
+				D77D73552BA42A3E002EAA4C /* MovieDetailsView.swift in Sources */,
+				D77D73572BA42A4F002EAA4C /* MovieDetailsViewModel.swift in Sources */,
+				D77D73482BA3A194002EAA4C /* PopularMoviesListView.swift in Sources */,
+				D77D735E2BA43D95002EAA4C /* AnimatedTextView.swift in Sources */,
+				D77D734A2BA3A1C2002EAA4C /* PopularMoviesListViewModel.swift in Sources */,
+				D77D73502BA3A371002EAA4C /* LabelView.swift in Sources */,
+				D77D73592BA42A5D002EAA4C /* MovieDetailsModel.swift in Sources */,
+				D73E1A072BA0EF4C008960C4 /* BlockbusterVaultApp.swift in Sources */,
+				D77D734E2BA3A30B002EAA4C /* AsyncImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D73E1A0F2BA0EF4D008960C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D73E1A102BA0EF4D008960C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D73E1A122BA0EF4D008960C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301700102BE82EAD009516B1 /* BlockbisterVault-Keys.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlockbusterVault/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockbusterVault/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.az.MovieMatrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D73E1A132BA0EF4D008960C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301700102BE82EAD009516B1 /* BlockbisterVault-Keys.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlockbusterVault/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockbusterVault/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.az.MovieMatrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D73E19FE2BA0EF4C008960C4 /* Build configuration list for PBXProject "BlockbusterVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73E1A0F2BA0EF4D008960C4 /* Debug */,
+				D73E1A102BA0EF4D008960C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D73E1A112BA0EF4D008960C4 /* Build configuration list for PBXNativeTarget "BlockbusterVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73E1A122BA0EF4D008960C4 /* Debug */,
+				D73E1A132BA0EF4D008960C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D77D735A2BA43AC3002EAA4C /* XCRemoteSwiftPackageReference "MarqueeText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joekndy/MarqueeText?tab=readme-ov-file";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D77D735F2BA45018002EAA4C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		D77D73672BA45558002EAA4C /* XCRemoteSwiftPackageReference "StarRatingViewSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magickworx/StarRatingViewSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D77D735B2BA43AC3002EAA4C /* MarqueeText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77D735A2BA43AC3002EAA4C /* XCRemoteSwiftPackageReference "MarqueeText" */;
+			productName = MarqueeText;
+		};
+		D77D73602BA45018002EAA4C /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77D735F2BA45018002EAA4C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		D77D73682BA45558002EAA4C /* StarRatingViewSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D77D73672BA45558002EAA4C /* XCRemoteSwiftPackageReference "StarRatingViewSwiftUI" */;
+			productName = StarRatingViewSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D73E19FB2BA0EF4C008960C4 /* Project object */;
+}
